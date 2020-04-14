@@ -2,8 +2,12 @@
 
 ## google_community_mobility_reports
 
-Google COVID-19 Community Mobility Reports. PDF archives from: https://www.google.com/covid19/mobility/
+- Google COVID-19 Community Mobility Reports. 
+- PDF archives from: https://www.google.com/covid19/mobility/
+- Google releases new data at an irregular interval (every few days)
 
 ## ontario/epidemiological_summary
 
-PDF archives from the daily Epidemiological Summary released by Public Health Ontario
+- Ontario Epidemiological Summary for COVID-19
+- PDF archives from Public Health Ontario at https://www.ontario.ca/page/2019-novel-coronavirus
+- Automatic daily updates
