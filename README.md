@@ -14,4 +14,4 @@
 
 ## apple_mobility_trends_reports
 - Apple Maps Mobility Trends Reports
-- CSV archifes from: https://www.apple.com/covid19/mobility
+- CSV archives from: https://www.apple.com/covid19/mobility
