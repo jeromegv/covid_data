@@ -11,3 +11,7 @@
 - Ontario Epidemiological Summary for COVID-19
 - PDF archives from Public Health Ontario at https://www.ontario.ca/page/2019-novel-coronavirus
 - Automatic daily updates
+
+## apple_mobility_trends_reports
+- Apple Maps Mobility Trends Reports
+- CSV archifes from: https://www.apple.com/covid19/mobility
