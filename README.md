@@ -15,3 +15,7 @@
 ## apple_mobility_trends_reports
 - Apple Maps Mobility Trends Reports
 - CSV archives from: https://www.apple.com/covid19/mobility
+
+## who_situation_reports
+- World Health Organization Situation Reports
+- Daily PDF archives from WHO: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports
