@@ -19,6 +19,24 @@ My daily scripts are also submitting all the files to the [Internet Archive](htt
 - Daily HTML output of https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/
 - Automatic daily updates
 
+## canada/full_epidemiological_report
+- Daily Epidemiology Update - Full Epidemiological report from the Government of Canada
+- Daily download of the full epidemiological report PDF https://www.canada.ca/content/dam/phac-aspc/documents/services/diseases/2019-novel-coronavirus-infection/surv-covid19-epi-update-eng.pdf
+- Automatic daily updates
+
+## canada/full_epidemiological_report/csv
+- CSV files being used to generate the graphics and charts on the page "Epidemiological summary of COVID-19 cases in Canada" https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html
+- Automatic daily updates
+
+## canada/current_situation_csv
+- Daily download of CSV https://health-infobase.canada.ca/src/data/covidLive/covid19.csv , which is the CSV linked from the main graphic on https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html
+- Automatic daily updates
+
+## canada/outbreak_update
+- Coronavirus disease (COVID-19): Outbreak update from the Government of Canada
+- HTML output of what is visible every day on https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html
+- Automatic daily updates
+
 ## google_community_mobility_reports
 - Google COVID-19 Community Mobility Reports. 
 - PDF archives from: https://www.google.com/covid19/mobility/
