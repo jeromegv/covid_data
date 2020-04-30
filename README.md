@@ -10,8 +10,8 @@ My daily scripts are also submitting all the files to the [Internet Archive](htt
 
 ## ontario/status_of_cases_in_ontario
 - Status of cases in Ontario
-- HTML output of what is visible every day on https://www.ontario.ca/page/2019-novel-coronavirus
-- Getting the HTML output using: https://api.ontario.ca/api/drupal/page%2F2019-novel-coronavirus?fields=body
+- HTML output of what is visible every day on https://www.ontario.ca/page/how-ontario-is-responding-covid-19
+- Getting the HTML output using: https://api.ontario.ca/api/drupal/page%2Fhow-ontario-is-responding-covid-19?fields=body
 - Automatic daily updates
 
 ## quebec/situation_html_output
