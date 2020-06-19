@@ -822,6 +822,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="/src/js/polylabel.js"></script>
     <script src="/src/js/epiSummary.js"></script>
     <script src="/src/js/provinces.js"></script>
+    <!--<script src="/src/js/exposurehistory.js"></script>-->
     <script type="text/javascript">
         var dateURL = '/src/data/covidLive/covid19-updateTime.csv';
         d3.csv(dateURL, function(error, data) {
