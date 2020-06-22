@@ -73,7 +73,10 @@
             fill: none;
             stroke-width: 3px;
         }
-
+		.chart rect {
+		stroke:black;
+		stroke-width:0.09px;
+		}
         .boxes {
             text-align: center;
             display: flex;
@@ -548,8 +551,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="page-break"></div>
 		
         <h2 id="a4">Epidemic curve</h2>
-        <p>COVID-19 cases in Canada by date of illness onset* as of <span class="updateTime"></span></p>
-        <p>The shaded area represents a period of time (lag time) where it is expected that cases have occurred but have not yet been reported nationally. There is an approximate 1 to 2 week delay when a person becomes ill and when their information is reported to the Public Health Agency of Canada, as a result of the time required to seek healthcare, get tested and receive results. It also takes time for public health authorities to gather information on cases. Therefore, new information will be provided as it becomes available.</p>
+		<p>Detailed case report data were provided on <span class="N0">99,853</span> cases; episode date was available for <span class="N1Total">94,112</span> (<span class="N1Percent">94</span>%) cases, and both exposure and episode date were available for <span class="N3Total">93,883</span> (<span class="N3Percent">94</span>%) cases.</p>
+        <p>The shaded area in Figure 2 represents a period of time (lag time) where it is expected that cases have occurred but have not yet been reported nationally. There is an approximate 1 to 2 week delay when a person becomes ill and when their information is reported to the Public Health Agency of Canada, as a result of the time required to seek healthcare, get tested and receive results. It also takes time for public health authorities to gather information on cases. Therefore, new information will be provided as it becomes available.</p>
 
         <h3>Figure 2. COVID-19 cases (n=<span class="N1"></span><sup id="fn1-0-rf"><a class="fn-lnk" href="#fn1"><span class="wb-invisible">Footnote </span>1</a></sup>) in Canada by date of illness onset* as of <span class="updateTime"></span>
             <span class="nowrap">(<select id="figure1-dropdown">
@@ -600,7 +603,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		
 <div class="page-break"></div>
         <h2 id="a5">Demographics</h2>
-                <p>Of the COVID-19 cases reported in Canada to date, approximately <span id="fractionSex">{Fraction (e.g "one third")}</span> (<span id="percentSex">{Percent Sex}</span>) are <span id="sex">{Sex}</span>. Approximately <span id="fractionOver60">{Fraction (e.g "one third")}</span> (<span id="percentOver60">{Percent of Over 60}</span>) of cases are 60 years old and over (Figure 3).</p>
+			<p>Detailed case report data were provided on <span class="N0">99,853</span> cases; age information was available for <span class="N5">99,712</span> (<span class="N5Percent">99</span>%) cases, and both age and gender were available for <span class="N2">99,362</span> (<span class="N2Percent">99</span>%) cases.</p>
+		
+			<p>Of the COVID-19 cases reported in Canada to date, approximately <span id="fractionSex">{Fraction (e.g "one third")}</span> (<span id="percentSex">{Percent Sex}</span>) are <span id="sex">{Sex}</span>. Approximately <span id="fractionOver60">{Fraction (e.g "one third")}</span> (<span id="percentOver60">{Percent of Over 60}</span>) of cases are 60 years old and over (Figure 3).</p>
         <h3>Figure 3.
             <select id="figure2-dropdown">
                 <option selected value="age">Age</option>
