@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+     <meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">	
+		<meta name="description" content="Epidemiological summary of COVID-19 cases in Canada including geographical and temporal distribution, demographics, symptoms and severity, probable exposure and provincial and territorial reporting.">	
+		<meta name="keywords" content="coronavirus, COVID-19, corona, Canada, social distancing, self-isolate, pandemic, epidemiology, cases, geography, temporal, distribution, symptoms, severity, probable exposure setting, travel, close contact, community setting, provincial, territorial, reporting">	
+		<meta name="author" content="Public Health Agency of Canada">	
+		<meta name="dcterms.title" content="Epidemiological summary of COVID-19 cases in Canada">	
+		<meta name="dcterms.description" content="Epidemiological summary of COVID-19 cases in Canada including geographical and temporal distribution, demographics, symptoms and severity, probable exposure and provincial and territorial reporting.">	
+		<meta name="dcterms.creator" content="Public Health Agency of Canada">	
+		<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+		<meta name="dcterms.subject" title="gccore" content="HE Health and Safety">	
+		<meta name="dcterms.issued" title="W3CDTF" content="2020-04-19">	
+		<meta name="dcterms.modified" title="W3CDTF" content="2020-06-18">	
+		<meta name="dcterms.spatial" content="Canada">	
+		<meta name="dcterms.type" content="datasets;statistics;education and awareness">	
+		<meta name="dcterms.source" content="aem">	
+		<meta name="dcterms.identifier" content="Public_Health_Agency_of_Canada">
+		<meta prefix="fb: https://www.facebook.com/2008/fbml" property="fb:pages" content="378967748836213, 160339344047502, 184605778338568, 237796269600506, 10860597051, 14498271095, 209857686718, 160504807323251, 111156792247197, 113429762015861, 502566449790031, 312292485564363, 1471831713076413, 22724568071, 17294463927, 1442463402719857, 247990812241506, 730097607131117, 1142481292546228, 1765602380419601, 131514060764735, 307780276294187, 427238637642566, 525934210910141, 1016214671785090, 192657607776229, 586856208161152, 1146080748799944, 408143085978521, 490290084411688, 163828286987751, 565688503775086, 460123390028, 318424514044, 632493333805962, 370233926766473, 173004244677, 1562729973959056, 362400293941960, 769857139754987, 167891083224996, 466882737009651, 126404198009505, 135409166525475, 664638680273646, 169011506491295, 217171551640146, 182842831756930, 1464645710444681, 218822426028, 218740415905, 123326971154939, 125058490980757, 1062292210514762, 1768389106741505, 310939332270090, 285960408117397, 985916134909087, 655533774808209, 1522633664630497, 686814348097821, 230798677012118, 320520588000085, 103201203106202, 273375356172196, 61263506236, 353102841161, 1061339807224729, 1090791104267764, 395867780593657, 1597876400459657, 388427768185631, 937815283021844, 207409132619743, 1952090675003143, 206529629372368, 218566908564369, 175257766291975, 118472908172897, 767088219985590, 478573952173735, 465264530180856, 317418191615817, 428040827230778, 222493134493922, 196833853688656, 194633827256676, 252002641498535, 398018420213195, 265626156847421, 202442683196210, 384350631577399, 385499078129720, 178433945604162, 398240836869162, 326182960762584, 354672164565195, 375081249171867, 333050716732105, 118996871563050, 240349086055056, 119579301504003, 185184131584797, 333647780005544, 306255172770146, 369589566399283, 117461228379000, 349774478396157, 201995959908210, 307017162692056, 145928592172074, 122656527842056">
+
+    <title>Epidemiological summary of COVID-19 cases in Canada - Canada.ca</title>
+   
+	<link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon" href="/src/GCWeb/assets/favicon-mobile.png"><link href="/src/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" class="wb-init wb-favicon-inited">
+    <link href="/src/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/GCWeb/css/wet-boew.min.css">
+    <link rel="stylesheet" href="/src/GCWeb/css/theme.min.css">
+
+    <noscript><link rel="stylesheet" href="/src/wet-boew/css/noscript.min.css" /></noscript>
+
+    <style type="text/css">
+        .bar {
+            fill: #015B7E;
+            stroke: #015B7E;
+        }
+
+        .axis {
+            stroke: #D8D8D8;
+        }
+
+        text {
+            /* fill: #6c686f; */
+            fill:black;
+        }
+
+        .tick>line,
+        .domain {
+            stroke: #ccc;
+        }
+
+        .x-axis-title,
+        .y-axis-title {
+            font-size: 0.8em;
+        }
+
+        .x-axis .tick line {
+            stroke: black;
+        }
+
+        .x-axis,
+        .y-axis {
+            font-size: 12px;
+        }
+
+        label {
+            display: inline;
+        }
+
+        .line {
+            fill: none;
+            stroke-width: 3px;
+        }
+		.chart rect {
+		stroke:black;
+		stroke-width:0.09px;
+		}
+        .boxes {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .boxes a, .boxes a:visited, .boxes a:focus {
+            flex: 0 0 30%;    
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .boxes a:hover {
+            border: 3px solid #000;
+            border-radius: 10px;
+            box-shadow: 2px 2px;
+        }
+        
+        #graphHospital text, #graphHospitalBySex text {
+            font-size: 16px;
+        }
+        #probable-exposure .y-axis, #probable-exposure .x-axis, #probable-exposure #legend{
+            font-size:16px;
+        }
+        
+        td#ratetested {
+            min-width: 80px;
+        }
+        
+        td#numtested {
+            min-width: 113px;
+        }
+        
+        @media only screen and (max-width: 800px) {
+
+        #probable-exposure .y-axis, #probable-exposure .x-axis, #probable-exposure #legend{
+            font-size:18px;
+        }
+        
+        #graphHospital text, #graphHospitalBySex text {
+            font-size: 18px;
+        }
+        .x-axis-title, .y-axis-title {
+            font-size: 1.1em!important;
+        }
+        .boxes a:visited, .boxes a:focus, .boxes a:hover {
+            flex: 0 0 37.5%;    
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        .boxes p{
+            font-size: 16px;
+        }
+        #txtTotal{
+            white-space:nowrap;
+        }
+        }
+        
+                @media only screen and (max-width: 991px) {
+            #mainImg {
+                margin-bottom: 20px;
+            }
+            #textarea {
+                margin-top: 20px;
+            }
+        }
+                @media only screen and (min-width: 991px) {
+            .pathText {
+                display: none;
+            }
+            #textarea {
+                margin-top: 128px;
+                height:138px;
+            }
+        }
+		
+ .page-break { display: none; } 
+ 
+        @media print {
+			body {
+				font-family: Helvetica, Arial,sans-serif;
+				font-size: 16px;
+				line-height: 1.4375;
+				color: #333;
+				background-color: #fff;
+			}
+			main {
+				font-size: 20px;
+				line-height: 1.65em;
+			}
+			.chart rect {
+			stroke:none;
+			}
+            #wb-bc, #onthispage, #updateDetails, .btn, #mapInstruct, hr, #figure3-dropdown, #trendData, #epiCurveDetails, #fig2table {
+                display: none;
+            }
+            h1 {
+                margin-top:20px;
+            }
+            details[open] {
+                border:none;
+            }
+            summary{
+                opacity:0;
+            }
+            #figure3-title-print, #graphHospitalBySex, #graphHospital, #chart1, #chart2, .demographics{
+                display:inline-block !important;
+            }
+            .page-break { display: block; page-break-before: always; }
+
+        }    
+		
+        @page {
+          margin: 2cm;
+        }
+
+            #figure3-title-print{
+                display:none;
+            }
+            
+            #graphHospitalBySex{
+                display:none;
+            }
+			
+#newCases>thead>tr>th,#newCases>tbody>tr>td {
+text-align:right;
+}
+#newCases>thead>tr>th:first-child,#newCases>tbody>tr>td:first-child {
+text-align:left;
+}
+    </style>
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+<!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+    <script>dataLayer1 = [];</script>
+	<script>dataLayer = [];</script>
+<!-- End Google Tag Manager -->
+	<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TN3RPZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TN3RPZ');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+<noscript><iframe title="Google Tag Manager" src="//www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer1'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer1','GTM-TLGQ9K');</script>
+<!-- End Google Tag Manager -->
+    <ul id="wb-tphp">
+        <li class="wb-slc">
+            <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+        </li>
+        <li class="wb-slc">
+            <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+        </li>
+    </ul>
+    <header>
+        <div id="wb-bnr" class="container">
+            <section id="wb-lng" class="text-right">
+                <h2 class="wb-inv">Language selection</h2>
+                <ul class="list-inline margin-bottom-none">
+                    <li><a lang="fr" href="https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html">Français</a></li>
+                </ul>
+            </section>
+            <div class="row">
+                <div class="brand col-xs-5 col-md-4">
+                    <a href="https://www.canada.ca/en.html"><img src="/src/GCWeb/assets/sig-blk-en.svg" alt=""><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+                </div>
+                <section id="wb-srch" class="col-lg-8 text-right">
+                    <h2>Search</h2>
+                    <form action="https://www.canada.ca/en/sr/srb.html" method="get" name="cse-search-box" role="search" class="form-inline">
+                        <div class="form-group">
+                            <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+                            <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+                            <datalist id="wb-srch-q-ac">
+                            </datalist>
+                        </div>
+                        <div class="form-group submit">
+                            <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <nav class="gcweb-menu" typeof="SiteNavigationElement">
+            <div class="container">
+                <h2 class="wb-inv">Menu</h2>
+                <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+                <ul role="menu" aria-orientation="vertical" data-ajax-replace="/src/ajax/sitemenu-v2-en.html">
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+                    <li role="presentation"><a role="menuitem" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Science and innovation</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="wb-bc" property="breadcrumb">
+            <h2>You are here:</h2>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+                    <li><a href="https://www.canada.ca/en/services/health.html">Health</a></li>
+                    <li><a href="https://www.canada.ca/en/public-health/services/diseases.html">Diseases and conditions</a></li>
+                    <li><a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">Coronavirus disease (COVID-19)</a></li>
+                    <li><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html">For health professionals</a></li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+    <main property="mainContentOfPage" id="main" class="container">
+        <h1>Coronavirus disease 2019 (COVID-19): Epidemiology update <a class="btn btn-info" href="https://health-infobase.canada.ca/src/data/covidLive/Epidemiological-summary-of-COVID-19-cases-in-Canada-Canada.ca.pdf"><i class="fa fa-download" aria-hidden="true"></i> <span class="wb-invisible">Download page in </span>.pdf<span class="wb-invisible"> format</span></a></h1>
+        <p>Updated: <span class="updateTime"></span></p>
+        <div id="onthispage">
+        <h2>On this page</h2>
+        <ul>
+            <li><a href="#a1">Key updates</a></li>
+            <li><a href="#a2">Current situation</a></li>
+            <li><a href="#a3">National overview</a></li>
+            <li><a href="#a4">Epidemic curve</a></li>
+			<li><a href="#a5">Demographics</a></li>
+            <li><a href="#a6">Exposure setting</a></li>
+            <li><a href="#a7">Hospitalizations, intensive care unit (ICU) and deaths</a></li>            
+            <li><a href="#a8">Provincial/territorial and international reporting</a></li>
+            <!--<li><a href="#a2">Epidemic Curve</a></li>-->
+            <!--<li><a href="#a3">Demographics</a></li>-->
+            <!--<li><a href="#a4">Symptoms and severity</a></li>-->
+            <!--<li><a href="#a5">Probable exposure setting</a></li>-->
+            <!--<li><a href="#a6">Provincial and territorial reporting</a></li>-->
+        </ul>
+        </div>
+        
+        <h2 id="a1">Key updates <small>as of <span class="updateTime"></span></small></h2>
+         <div class='boxes'>
+            <!--<svg class="totalCases" tabindex="0">-->
+                <a href="#a2" data-figure="1" data-type-stat="num" data-type-measure="total"><div class="mrgn-tp-lg mrgn-bttm-lg">
+                    <p class="h2"><span class="totalCases">{Total Cases}</span></p>
+                    <p>Total Cases</p>
+                </div></a>
+            <!--</svg>-->
+            <!--<svg class="recovered" tabindex="0">-->
+                <a href="#a2" data-figure="1" data-type-stat="num" data-type-measure="recover"><div class="mrgn-tp-lg mrgn-bttm-lg">
+                    <p class="h2"><span class="recovered">{Recovered}</span> <small>(<span class="percentRecovered">{Percent recovered}</span>%)</small></p>
+                    <p>Recovered</p>
+                </div></a>
+            <!--</svg>-->
+            <!--<svg class="deaths" tabindex="0">-->
+                <a href="#a2" data-figure="1" data-type-stat="num" data-type-measure="deaths"><div class="mrgn-tp-lg mrgn-bttm-lg">
+                    <p class="h2"><span class="deaths">{Deaths}</span> <small>(<span class="percentDeaths">{Percent deaths}</span>%)</small></p>
+                    <p>Deaths</p>
+                </div></a>
+            <!--</svg>-->
+
+            <!--<svg class="newCases" tabindex="0" id="test">-->
+                <a href="#a3"><div class="mrgn-tp-lg mrgn-bttm-lg">
+                    <p class="h2"><span class="newCases">{New cases}</span></p>
+                    <p>New cases</p>
+                </div></a>
+            <!--</svg>-->
+            <!--<svg class="rateTested" tabindex="0">-->
+                <a href="#a3"><div class="mrgn-tp-lg mrgn-bttm-lg">
+                    <p class="h2"><span class="rateTested">{Num tested}</span></p>
+                    <p>People tested per 1 million</p>
+                </div></a>
+            <!--</svg>-->
+            <!--<svg class="percentPositive" tabindex="0">-->
+                <a href="#a3"><div class="mrgn-tp-lg mrgn-bttm-lg">
+                    <p class="h2"><span class="percentPositive">{Positive percent}</span>%</p>
+                    <p>Percent positive (total)</p>
+                </div></a>
+            <!--</svg>-->
+        </div>
+        <!--<p>Daily epidemiology update as of <span class="updateTime"></span>-->
+        <!--    <ul> -->
+        <!--        <li>Confirmed cases: <strong><span class="confirmedCases">{Confirmed cases}</span></strong></li>-->
+        <!--        <li>Recovered: <strong><span class="recovered">{Recovered}</span> (<span class="percentRecovered">{Percent recovered}</span>%)</strong></li>-->
+        <!--        <li>Deaths: <strong><span class="deaths">{Deaths}</span> (<span class="percentDeaths">{Percent deaths}</span>%)</strong></li>-->
+        <!--        <li>New cases: <strong><span class="newCases">{New cases}</span></strong></li>-->
+        <!--        <li>People tested per 1 million: <strong><span class="numTested">{Num tested}</span></strong></li>-->
+        <!--        <li>Percent positive (total): <strong><span class="percentPositive">{Positive percent}</span>%</strong></li>-->
+        <!--    </ul>-->
+        <!--</p>-->
+        <details id="updateDetails" style="margin: 0px 36px;">
+            <summary>Daily epidemiology update: Text description</summary>
+            <table class="table table-bordered">
+                <caption class="text-left">
+                    Daily epidemiology update as of <span class="updateTime"></span>
+                </caption>
+                <thead>
+
+                </thead>
+                <tbody class="">
+                    <tr>
+                        <th>Total cases</th>
+                        <td><span class="totalCases">{Total cases}</span></td>
+                    </tr>
+                    <tr>
+                        <th>Recovered</th>
+                        <td><span class="recovered">{Recovered}</span></td>
+                    </tr>
+                    <tr>
+                        <th>Percent recovered</th>
+                        <td><span class="percentRecovered">{Percent recovered}</span>%</td>
+                    </tr>
+                    <tr>
+                        <th>Deaths</th>
+                        <td><span class="deaths">{Deaths}</span></td>
+                    </tr>
+                    <tr>
+                        <th>Percent deaths</th>
+                        <td><span class="percentDeaths">{Percent deaths}</span>%</td>
+                    </tr>
+                    <tr>
+                        <th>New cases</th>
+                        <td><span class="newCases">{New cases}</span></td>
+                    </tr>
+                    <tr>
+                        <th>People tested per 1 million</th>
+                        <td><span class="rateTested">{Rate tested}</span></td>
+                    </tr>
+                    <tr>
+                        <th>Percent positive</th>
+                        <td><span class="percentPositive">{Positive percent}</span>%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+        <br/>
+
+        <!-- Make this dynamic -->
+            <ul id="keyStatements">
+                <!--<li>Canada is still reporting new cases, but the numbers are lowering</li>-->
+                <!--<li>Quebec and Ontario continue to report the majority of cases (<strong>86%</strong>) and deaths (<strong>94%</strong>)</li>-->
+                <!--<li>No new <strong>cases</strong> have been reported in 6 provinces or territories</li>-->
+                <!--<li>No new <strong>deaths</strong> have been reported in 9 provinces or territories within the past 24 hours</li>-->
+            </ul>
+
+		<div class="page-break"></div>
+        <h2 id="a2">Current situation</h2>
+        <!--<p>Summary of COVID-19 cases reported in Canada by location as of <time id="updateTime"></time> EDT.</p>-->
+
+        <h3>Figure 1. 
+            <label for="dropdownType3" class="wb-inv">Types of statistics</label>
+            <select id="dropdownType3" class="form-control dropdown form-inline" style="display:inline; font-size:1.1em; color:#333; height:39px; padding:3px 9px;">
+			  	<optgroup label="Types of statistics">
+			    	<option selected value="num" class="toggleBtns">Count</option>
+			    	<option value="rate" class="toggleBtns">Rate</option>
+			  	</optgroup>
+			</select>
+            <span class="titleNumMod">of</span>
+            <label for="dropdownType1" class="wb-inv">Types of measures</label>
+            <select id="dropdownType1" class="form-control dropdown form-inline" style="display:inline; font-size:1.1em; color:#333; height:39px; padding:3px 9px;">
+			  	<optgroup label="Types of measures">
+			    	<option value="tested" class="toggleBtns">people tested</option>
+			    	<option selected value="total" class="toggleBtns">total cases</option>
+			    	<option value="deaths" class="toggleBtns">deaths</option>
+			    	<option value="recover" class="toggleBtns">cases recovered</option>
+			  	</optgroup>
+			</select>
+            <!--<span class="titleNumPerc">Number</span> --><span class="numArticle">of</span> COVID-19 in Canada as of <span class="txtCurrentDate"></span>
+        </h3>
+
+        <p id="mapInstruct"><i class="fa fa-info-circle" aria-hidden="true"></i> Hover over provinces and territories to see total cases, recovered cases, number of people tested or deaths in Canada over time. Click the play button to animate the map.</p>
+
+        <div id="map-container" class="row">
+            <div id="map" class="col-md-9"></div>
+            <div class="col-md-3">
+                <p id="textarea" style="font-size:17px;">The <span class="txtTypeMod">count</span> of <span class="txtType">total cases</span> <span class="numArticle">of</span> <span class="nowrap">COVID-19</span> <span id="textArticle1">in</span> <strong><span id="txtName">Canada</span></strong>                    was <strong><span id="txtTotal">1,471</span> <span style="display:none;" id="txtTotalMod">per 100,000 population</span></strong> as of <span id="descText2"></span>.</p>
+                <hr/>
+                <svg id="trendData" width="100%" preserveAspectRatio="xMinYMin meet" viewBox="0 0 292 230">
+                </svg>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button id="animateMap" style="width:89.53px;" class="btn btn-info off"><i class="fa fa-play" aria-hidden="true"></i> Play</button>
+                        <a class="btn btn-info" href="https://health-infobase.canada.ca/src/data/covidLive/covid19.csv"><i class="fa fa-download" aria-hidden="true"></i> <span class="wb-invisible">Download data in </span>.csv<span class="wb-invisible"> format</span></a>
+                        <!--<button id="downloadImage" class="btn btn-info disabled"><i class="fa fa-save" aria-hidden="true"></i> .png</button>-->
+                    </div>
+                </div>
+                <hr/>
+            </div>
+        </div>
+		
+		<div class="page-break"></div>
+		
+        <details>
+            <summary>Figure 1: Text description</summary>
+            <div class="table-responsive">
+            <table id="dataTable" class="table table-striped table-bordered table-hover table-responsive">
+                <caption class="text-left">
+                    Areas in Canada with cases of COVID-19 as of <span class="txtCurrentDate"></span>
+                </caption>
+                <thead>
+                    
+                    <tr>
+                        <th scope="col" rowspan="2">Location</th>
+                        <th colspan="2">Total Cases</th>
+                        <th colspan="1">Recovered</th>
+                        <th colspan="2">Deaths</th>
+                        <th colspan="2">Tested</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Count</th>
+                        <th scope="col">Rate<sup>*</sup></th>
+                        <th scope="col">Count</th>
+                        <th scope="col">Count</th>
+                        <th scope="col">Rate<sup>*</sup></th>
+                        <th scope="col">Count</th>
+                        <th scope="col">Rate<sup>†</sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+            <p><sup>**</sup> No data is available for this day, and so the most recently available data is displayed.</p>
+			<p><sup>*</sup> Rate per 100,000 population</p>
+			<p><sup>†</sup> Rate per 1,000,000 population</p>
+        </details>
+		
+<div class="page-break"></div>
+
+        <h2 id="a3">National overview</h2>
+        <p>Over <strong><span class="numTested">{Num tested}</span></strong> people have been tested for COVID-19 in Canada. This corresponds to a test rate of <strong><span class="rateTested">{Rate tested}</span> per 1 million people</strong>. Of all
+            people tested, <strong><span class="percentPositive">{Tested positive}</span>%</strong> have been found to be positive. For more detailed information about trends in laboratory testing for COVID-19 in Canada, please see the <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/epidemiological-economic-research-data.html">Detailed weekly epidemiological report (PDF)</a>.</p>
+
+        <table id="newCases" class="table table-bordered">
+            <caption class="text-left">
+                <!-- No date wrap -->
+                Table 1. Daily change in the number of cases, deaths and people tested, by location in Canada as of <span class="updateTime"></span>
+            </caption>
+            <thead>
+                <tr class="bg-primary">
+                    <th scope="col">Location</th>
+                    <th scope="col">New cases</th>
+                    <th scope="col">New deaths</th>
+                    <th scope="col">Number of people tested</th>
+                </tr>
+            </thead>
+            <tbody class="nationalNumbers-data">
+            </tbody>
+        </table>
+		<p>N/A indicates no daily update provided by province/territory.</p>
+		
+        <p>Tables and figures included below reflect only detailed case information data provided to the Public Health Agency of Canada by provincial/territorial health authorities.</p>
+
+        <!--<p>Information on demographics, symptoms, and outcomes is currently available for <span class="cases-to-date"></span> reported cases in Canada. This is because it takes time for health authorities to gather this information for each individual. The data below should be used to observe trends and not absolute numbers.</p>-->
+        <!--<p>A <a href="https://www.canada.ca/content/dam/phac-aspc/documents/services/diseases/2019-novel-coronavirus-infection/surv-covid19-epi-update-eng.pdf" rel="external">full epidemiologic report</a> is also available in PDF.</p>-->
+
+		<div class="page-break"></div>
+		
+        <h2 id="a4">Epidemic curve</h2>
+		<p>Detailed case report data were provided on <span class="N0">99,853</span> cases; episode date was available for <span class="N1Total">94,112</span> (<span class="N1Percent">94</span>%) cases, and both exposure and episode date were available for <span class="N3Total">95,576</span> (<span class="N3Percent">94</span>%) cases.</p>
+        <p>The shaded area in Figure 2 represents a period of time (lag time) where it is expected that cases have occurred but have not yet been reported nationally. There is an approximate 1 to 2 week delay when a person becomes ill and when their information is reported to the Public Health Agency of Canada, as a result of the time required to seek healthcare, get tested and receive results. It also takes time for public health authorities to gather information on cases. Therefore, new information will be provided as it becomes available.</p>
+
+        <h3>Figure 2. COVID-19 cases (n=<span class="N1"></span><sup id="fn1-0-rf"><a class="fn-lnk" href="#fn1"><span class="wb-invisible">Footnote </span>1</a></sup>) in Canada by date of illness onset* as of <span class="updateTime"></span>
+            <span class="nowrap">(<select id="figure1-dropdown">
+                <option value="new">total cases</option>
+                <option value="breakdown">by exposure</option>
+            </select>)</span>
+            <label for="figure1-dropdown"> 
+            
+            </label>
+        </h3>
+        <!--<div id="cases-over-time">-->
+        <!--    <svg class="chart" id="graph1">-->
+        <!--    </svg>-->
+        <!--</div>-->
+        <!--<div class="checkbox col-xs-12 mrgn-lft-md checkboxtext">-->
+        <!--   <for="defaultCheck1" label><input id="defaultCheck1" type="checkbox" value="breakdown">Exposure history breakdown</label>-->
+        <!--</div>-->
+<!-- 				<div class="figure2JPG" style="display:none"><img src="/src/data/covidLive/epiFigure2-1-EN.png" width="1200" height="600"></img></div>
+		<div class="figure2JPG" style="display:none"><img src="/src/data/covidLive/epiFigure2-2-EN.png" width="1200" height="600"></img></div> -->
+<div id="exposure-history">
+            <svg class="chart" id="chart1"></svg>
+            <svg class="chart" id="chart2"></svg>
+        </div>
+        <p>* If date of illness onset was not available, either specimen collection date or laboratory testing date was used.</p>
+
+        <p class="small" id="newCaseNote"><strong>Data note:</strong> The shaded area represents a period of time (lag time) where it is expected that cases have occurred but have not yet been reported nationally.</p>
+        <details id="fig2table">
+            <summary>Figure 2: Text description</summary>
+            <table class="table table-bordered table-striped">
+                <caption class="text-left">
+                    COVID-19 cases (n=<span class="N1"></span><sup id="fn1-1-rf"><a class="fn-lnk" href="#fn1"><span class="wb-invisible">Footnote </span>1</a></sup>*) in Canada by date of illness onset<sup id="fn2-1-rf"><a class="fn-lnk" href="#fn2"><span class="wb-invisible">Footnote </span>2</a></sup> as of <span class="updateTime"></span>
+                </caption>
+                <thead>
+                    <tr class="bg-primary">
+                        <th scope="col">Date of illness onset<sup id="fn2-3-rf"><a class="fn-lnk" href="#fn2"><span class="wb-invisible">Footnote </span>2</a></sup></th>
+                        <th scope="col">Newly reported cases<sup id="fn1-2-rf"><a class="fn-lnk" href="#fn1"><span class="wb-invisible">Footnote </span>1</a></sup></th>
+                        <th scope="col">Domestic - Contact with a COVID case</th>
+                        <th scope="col">Domestic - Contact with a traveller</th>
+                        <th scope="col">Domestic - Unknown</th>
+                        <th scope="col">Travelled outside of Canada</th>
+                        <th scope="col">Information pending</th>
+                    </tr>
+                </thead>
+                <tbody class="confirmed-data">
+                </tbody>
+            </table>
+        </details>
+		
+<div class="page-break"></div>
+        <h2 id="a5">Demographics</h2>
+		<p>Detailed case report data were provided on <span class="N0">99,853</span> cases; age information was available for <span class="N5">99,712</span> (<span class="N5Percent">99</span>%) cases, and both age and gender were available for <span class="N2Total">99,362</span> (<span class="N2Percent">99</span>%) cases.</p>
+		
+			<p>Of the COVID-19 cases reported in Canada to date, approximately <span id="fractionSex">{Fraction (e.g "one third")}</span> (<span id="percentSex">{Percent Sex}</span>) are <span id="sex">{Sex}</span>. Approximately <span id="fractionOver60">{Fraction (e.g "one third")}</span> (<span id="percentOver60">{Percent of Over 60}</span>) of cases are 60 years old and over (Figure 3).</p>
+        <h3>Figure 3.
+            <select id="figure2-dropdown">
+                <option selected value="age">Age</option>
+                <option value="age sex">Age by gender</option>
+            </select>
+            <label for="figure2-dropdown"> distribution of COVID-19 cases (n=<span class="N2"></span><sup id="fn1-5-rf"><a class="fn-lnk" href="#fn1"><span class="wb-invisible">Footnote </span>1</a></sup>) in Canada as of <span class="updateTime"></span></label>
+        </h3>
+        <div>
+            <svg class="demographics" id="demo-age"></svg>
+            <svg class="demographics" id="demo-age-gender" style="display:none;"></svg>
+        </div>
+        
+        <details>
+          <summary>Figure 3: Text description</summary>
+          <table class="table table-bordered">
+            <caption class="text-left">
+                Age by gender distribution of COVID-19 cases (n=<span class="N2"></span>) in Canada, <span class="updateTime"></span>
+            </caption>
+            <thead>
+              <tr class="bg-primary">
+                <th scope="col">Age group (years)</th>
+                <th scope="col">Number of cases with case reports (proportion)</th>
+                <th scope="col">Number of male cases (proportion)</th>
+                <th scope="col">Number of female cases (proportion)</th>
+              </tr>
+            </thead>
+            <tbody class="age-group-data">
+            </tbody>
+          </table>
+        </details>
+
+        <h2 id="a6">Exposure setting</h2>
+		<p>Detailed case report data were provided on <span class="N0">99,853</span> cases; exposure history was available for <span class="N6">97,911</span> (<span class="N6Percent">98</span>%) cases. The probable exposure setting of these reported cases<sup id="fn1-4-rf"><a class="fn-lnk" href="#fn1"><span class="wb-invisible">Footnote </span>1</a></sup> are:</p>
+            <ul>
+                <li>domestic acquisition (defined as any exposure that occurred within Canada): <strong><span id="spread">{Spread}</span> (<span id="percentSpread">{Percent spread}</span>%)</strong>
+                    <ul>
+                        <li>from contact with a COVID case: <strong><span id="spreadContact">{Spread contact}</span>%</strong></li>
+                        <li>from contact with a traveller: <strong><span id="spreadTraveller">{Spread traveller}</span>%</strong></li>
+                        <li>from an unknown source: <strong><span id="spreadUnknown">{Spread unknown}</span>%</strong></li>
+                    </ul>
+                </li>
+                <li>currently unknown (information pending): <strong><span id="unknownPending">{Unknown pending}</span> (<span id="percentUnknownPending">{Percent unknown pending}</span>%)</strong></li>
+                <li>travelled outside of Canada: <strong><span id="travelled">{Travelled}</span> (<span id="percentTravelled">{Percent travelled}</span>%)</strong></li>
+            </ul>
+<div class="page-break"></div>
+        <!--<h4>Figure 3. Probable exposure setting of COVID-19 cases (n=XXXX) in Canada as of <span class="updateTime"></span></h4>-->
+        <!--<div id="probable-exposure">-->
+        <!--    <svg class="chart" id="graph3">-->
+        <!--    </svg>-->
+        <!--</div>-->
+
+        <!--<details>-->
+        <!--    <summary>Figure 3: Text description</summary>-->
+        <!--    <table class="table table-bordered">-->
+        <!--        <caption class="text-left">-->
+        <!--            Probable exposure setting of COVID-19 cases (n=XXXX) in Canada as of <span class="updateTime"></span>-->
+        <!--        </caption>-->
+        <!--        <thead>-->
+        <!--            <tr class="bg-primary">-->
+        <!--                <th scope="col">Probable exposure setting</th>-->
+        <!--                <th scope="col">Proportion of cases</th>-->
+        <!--            </tr>-->
+        <!--        </thead>-->
+        <!--        <tbody class="probable-exposure-data">-->
+        <!--        </tbody>-->
+        <!--    </table>-->
+        <!--</details>-->
+
+        <h2 id="a7">Hospitalizations, intensive care unit (ICU) admissions and deaths</h2>
+		<p>Detailed case report data were provided on <span class="N0">99,853</span> cases; hospitalization status information was available for <span class="N7">65,597</span> (<span class="N7Percent">xx</span>%) of these cases:</p> 
+            <ul>
+                <li><strong><span id="numHospitalized">{Num Hospitalized}</span></strong> cases <strong>(<span id="percentHospitalized">{Percent Hospitalized}</span>%)</strong> were hospitalized, of whom:</li>
+                <ul><li><strong><span id="numIntensiveCare">{Num Intensive Care}</span></strong> <strong>(<span id="percentIntensiveCare">{Percent Intensive Care}</span>%)</strong> were admitted to the ICU</li>
+                <li><strong><span id="numMechVent">{Num Mechanical Ventilation}</span></strong> <strong>(<span id="percentMechVent">{Percent Mechanical Ventilation}</span>%)</strong> required mechanical ventilation</li></ul>
+            </ul>
+        <p>Detailed case report forms have been received from provinces and territories for <strong><span id="numDeaths">{Num Deaths}</span></strong> deaths related to COVID-19.</p>
+
+		<h3>Figure 4.
+		<select id="figure3-dropdown">
+			<option selected value="age">Age</option>
+			<option value="gender">Gender</option>
+		</select> 
+		<span id="figure3-title-print">Age and Gender</span>
+		distribution of COVID-19 cases hospitalized, admitted to ICU and deceased in Canada as of <span class="updateTime"></span></h3>
+        <div id="hospitalization">
+			<div> 
+				<svg class="chart" id="graphHospital">
+				</svg>
+			</div>
+			<div>
+				<svg class="chart" id="graphHospitalBySex" style="display: none;">
+				</svg>
+			</div>
+        </div>	
+		
+	
+		<div class="page-break"></div>
+		
+        <details>
+            <summary>Figure 4: Text description</summary>
+            <table class="table table-bordered">
+                <caption class="text-left">
+                    Age distribution of COVID-19 cases hospitalized, admitted to ICU and deceased in Canada as of <span class="updateTime"></span>
+                </caption>
+                <thead>
+                    <tr class="bg-primary">
+                        <th scope="col">Age group (years)</th>
+                        <th scope="col">Number of all hospitalizations</th>
+                        <th scope="col">Percentage of all hospitalizations</th>
+                        <th scope="col">Number admitted to ICU</th>
+                        <th scope="col">Percentage admitted to ICU</th>
+                        <th scope="col">Number of deceased</th>
+                        <th scope="col">Percentage of deceased</th>
+                    </tr>
+                </thead>
+                <tbody class="hospitalization-data">
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <caption class="text-left">
+                    Gender distribution of COVID-19 cases hospitalized, admitted to ICU and deceased in Canada as of <span class="updateTime"></span>
+                </caption>
+                <thead>
+                    <tr class="bg-primary">
+                        <th scope="col">Gender</th>
+                        <th scope="col">Number of all hospitalizations</th>
+                        <th scope="col">Percentage of all hospitalizations</th>
+                        <th scope="col">Number admitted to ICU</th>
+                        <th scope="col">Percentage admitted to ICU</th>
+                        <th scope="col">Number of deceased</th>
+                        <th scope="col">Percentage of deceased</th>
+                    </tr>
+                </thead>
+                <tbody class="hospitalization-data-sex">
+                </tbody>
+            </table>
+        </details>
+<div class="page-break"></div>       
+        <h2 id="a8">Provincial/territorial and international reporting</h2>
+        <p>For more information, please refer to provincial or territorial COVID-19 webpages:</p>
+        <ul>
+            <li><a href="http://www.bccdc.ca/about/news-stories/stories/2020/information-on-novel-coronavirus" rel="external">British Columbia</a></li>
+            <li><a href="https://www.alberta.ca/coronavirus-info-for-albertans.aspx" rel="external">Alberta</a></li>
+            <li><a href="https://www.saskatchewan.ca/government/health-care-administration-and-provider-resources/treatment-procedures-and-guidelines/emerging-public-health-issues/2019-novel-coronavirus/cases-and-risk-of-covid-19-in-saskatchewan" rel="external">Saskatchewan</a></li>
+            <li><a href="https://www.gov.mb.ca/health/coronavirus/" rel="external">Manitoba</a></li>
+            <li><a href="https://www.ontario.ca/page/2019-novel-coronavirus#section-0" rel="external">Ontario</a></li>
+            <li><a href="https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/situation-coronavirus-in-quebec/" rel="external">Quebec</a></li>
+            <li><a href="https://www.health.gov.nl.ca/health/publichealth/cdc/coronavirus/" rel="external">Newfoundland and Labrador</a></li>
+            <li><a href="https://www2.gnb.ca/content/gnb/en/departments/ocmoh/cdc/content/respiratory_diseases/coronavirus.html" rel="external">New Brunswick</a></li>
+            <li><a href="https://novascotia.ca/coronavirus/" rel="external">Nova Scotia</a></li>
+            <li><a href="https://www.princeedwardisland.ca/en/topic/covid-19" rel="external">Prince Edward Island</a></li>
+            <li><a href="https://yukon.ca/en/health-and-wellness/health-concerns-diseases-and-conditions/find-information-about-coronavirus-covid" rel="external">Yukon</a></li>
+            <li><a href="https://www.hss.gov.nt.ca/en/services/coronavirus-disease-covid-19" rel="external">Northwest Territories</a></li>
+            <li><a href="https://www.gov.nu.ca/health/information/covid-19-novel-coronavirus" rel="external">Nunavut</a></li>
+			<li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">World Health Organization</a></li>
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/index.html">Centers for Disease Control and Prevention</a></li>
+<li><a href="https://www.ecdc.europa.eu/en/covid-19-pandemic">European Centre for Disease Control and Prevention</a></li>
+
+        </ul>
+        <div class="wb-fnote wb-init wb-fnote-inited" role="note" id="wb-auto-5">
+            <h3 id="fn" class="wb-inv">Footnotes</h3>
+            <dl>
+                <dt id="fn1-dt">Footnote 1</dt>
+                <dd id="fn1" tabindex="-1" aria-labelledby="fn1-dt">
+                    <p>This figure is based on cases for which a case report form has been received by the Public Health Agency of Canada from provincial/territorial partners.</p>
+                    <p class="fn-rtn"><a href="#fn1-0-rf"><span class="wb-invisible">Return to footnote </span>1<span class="wb-invisible"> referrer</span></a></p>
+                </dd>
+                 <dt id="fn2-dt">Footnote 2</dt>
+                <dd id="fn2" tabindex="-1" aria-labelledby="fn2-dt">
+                    <p>If date of illness onset was not available the earliest of the following dates was used as an estimate in the following order: Specimen Collection Date and Laboratory Testing Date.</p>
+                    <p class="fn-rtn"><a href="#fn2-0-rf"><span class="wb-invisible">Return to footnote </span>2<span class="wb-invisible"> referrer</span></a></p>
+                </dd>
+            </dl>
+        </div>
+		<div id="printAppendix"></div>
+		
+        <div class="pagedetails ">
+            <!-- Bring Back Share Links / Report this Page -->
+            <dl id="wb-dtmd">
+                <dt>Date modified:</dt>
+                <dd><time class="dateModified" property="dateModified">2020-06-09</time></dd>
+            </dl>
+        </div>
+    </main>
+    <footer id="wb-info">
+        <div class="landscape">
+            <nav class="container wb-navcurr">
+                <h2 class="wb-inv">About government</h2>
+                <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+                    <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+                    <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+                    <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+                    <li><a href="https://www.canada.ca/en/news.html">News</a></li>
+                    <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+                    <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+                    <li><a href="https://pm.gc.ca/eng">Prime Minister</a></li>
+                    <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+                    <li><a href="https://open.canada.ca/en/">Open government</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="brand">
+            <div class="container">
+                <div class="row">
+                    <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+                        <h2 class="wb-inv">About this site</h2>
+                        <ul>
+                            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+                            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+                            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+                            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+                            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+                        </ul>
+                    </nav>
+                    <div class="col-xs-6 visible-sm visible-xs tofpg">
+                        <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+                        <img src="/src/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
+
+    <script src="/src/wet-boew/js/wet-boew.min.js"></script>
+    <script src="/src/GCWeb/js/theme.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-interpolate-path@2.0.0/build/d3-interpolate-path.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="/src/js/polyfill.js"></script>
+    <script src="/src/js/polylabel.js"></script>
+    <script src="/src/js/epiSummary.js"></script>
+    <script src="/src/js/provinces.js"></script>
+    <script src="/src/js/exposurehistory.js"></script>
+    <script type="text/javascript">
+        var dateURL = '/src/data/covidLive/covid19-updateTime.csv';
+        d3.csv(dateURL, function(error, data) {
+            if (error) throw error;
+            var formatTime = d3.timeFormat("%B %-d, %Y, %-I %p EDT");
+            var parseTime = d3.timeParse("%Y-%m-%d %H:%M");
+            $(".updateTime").text(formatTime(parseTime(data["columns"][0])).replace("PM", "pm").replace("AM", "am"));
+			formatTime = d3.timeFormat("%Y-%m-%d");
+			$(".dateModified").text(formatTime(parseTime(data["columns"][0])));
+        })
+		// Set up before/after handlers
+var beforePrint = function() {
+    $("details").attr('open', '');	
+	//d3.select(".printChart").style("display","");
+};
+var afterPrint = function() {
+    $("details").removeAttr('open');
+};
+
+// Webkit
+if (window.matchMedia) {
+    var mediaQueryList = window.matchMedia('print');
+    mediaQueryList.addListener(function(mql) {
+        if (mql.matches) {
+            beforePrint();
+        } else {
+            afterPrint();
+        }
+    });
+}
+// IE, Firefox
+window.onbeforeprint = beforePrint;
+window.onafterprint = afterPrint;
+    </script>
+
+</body>
+</html>
