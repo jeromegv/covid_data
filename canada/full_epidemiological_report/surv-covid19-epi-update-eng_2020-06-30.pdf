@@ -675,13 +675,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h2 id="a7">Hospitalizations, intensive care unit (ICU) admissions and deaths</h2>
 		<p>Detailed case report data were provided on <span class="N0">99,853</span> cases; hospitalization status information was available for <span class="N7">65,597</span> (<span class="N7Percent">xx</span>%) of these cases:</p> 
             <ul>
-                <li><strong><span id="numHospitalized">{Num Hospitalized}</span><sup>*</sup></strong> cases <strong>(<span id="percentHospitalized">{Percent Hospitalized}</span>%)</strong> were hospitalized, of whom:</li>
-                <ul><li><strong><span id="numIntensiveCare">{Num Intensive Care}</span><sup>*</sup></strong> <strong>(<span id="percentIntensiveCare">{Percent Intensive Care}</span>%)</strong> were admitted to the ICU</li>
+                <li><strong><span id="numHospitalized">{Num Hospitalized}</span></strong> cases <strong>(<span id="percentHospitalized">{Percent Hospitalized}</span>%)</strong> were hospitalized, of whom:</li>
+                <ul><li><strong><span id="numIntensiveCare">{Num Intensive Care}</span></strong> <strong>(<span id="percentIntensiveCare">{Percent Intensive Care}</span>%)</strong> were admitted to the ICU</li>
                 <li><strong><span id="numMechVent">{Num Mechanical Ventilation}</span></strong> <strong>(<span id="percentMechVent">{Percent Mechanical Ventilation}</span>%)</strong> required mechanical ventilation</li></ul>
             </ul>
         <p>Detailed case report forms have been received from provinces and territories for <strong><span id="numDeaths">{Num Deaths}</span></strong> deaths related to COVID-19.</p>
-		
-		<p>* The number of hospitalized cases and the number of cases admitted to the ICU have decreased since the update on June 28, 2020. These apparent decreases are attributable to the removal of duplicate entries in Ontario.</p>
 
 		<h3>Figure 4.
 		<select id="figure3-dropdown">
